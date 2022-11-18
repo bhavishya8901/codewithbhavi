@@ -2,17 +2,20 @@
 var btn = document.getElementById('btn')
 function openPage(){
     var search = document.getElementById('search').value;
-    if (search === "html"){
-        window.open('/html.html')
+    if (search === "tailwind"){
+        window.open('/tail/tai1.html')
     }
     if (search === "web development"){
         window.open('/web.html')
     }
-    if (search === "css"){
-        window.open('/css.html')
-    }  if (search === "javascript"){
-        window.open('/js.html')
+    if (search === "tailwind ep1"){
+        window.open('/tail/tai1.html')
+    }  if (search === "courses"){
+        window.open('/course.html')
     }  if (search === "home"){
+        window.open('/index.html')
+    }
+    if (search === "home"){
         window.open('/index.html')
     }
 }

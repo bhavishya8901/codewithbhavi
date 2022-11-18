@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+          <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/course.html">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-class">
+          <input type="text" name="search" id="search" onchange="openPage()" />
+          <button class="s-btn btn-sm" id="btn">Search</button>
+        </div>
+      </nav>
+     <div id="imgpreview" class="dark:bg-gray-900 dark:text-white"><section class="mx-2 justify-center align-middle "><div class="flex flex-wrap lg:-mx-1 xl:-mx-1"><div class="w-full border lg:my-1 lg:px-1 lg:w-2/3 xl:my-1 xl:px-1 xl:w-2/3 mx-auto"><div class="h-[30vh] lg:h-[30vh] mx-auto xl:h-[70vh]"><iframe title="YouTube Video" src="https://www.youtube.com/embed/aUunolbb1xU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ww"></iframe></div></div></div></section><nav class="mx-2 px-3 tabs flex sm:flex-row overflow-x-scroll lg:overflow-x-hidden "><button class="tab active dark:text-gray-400 text-gray-600 py-2 px-2 block hover:text-purple-700 focus:outline-none font-medium border-b-2 border-purple-700">Overview</button><button class="tab active dark:text-gray-400 text-gray-600 py-2 px-2 block hover:text-purple-700 focus:outline-none font-medium false border-purple-700">Q&amp;A</button><button class="tab active dark:text-gray-400 text-gray-600 py-2 px-2 block hover:text-purple-700 focus:outline-none font-medium false border-purple-700">Downloads</button><button class="tab active dark:text-gray-400 text-gray-600 py-2 px-2 block hover:text-purple-700 focus:outline-none font-medium false border-purple-700">Announcements</button></nav><div id="panels"><div class="lg:w-2/3  lg:mx-8 my-2 min-h-screen"><h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">Why use Tailwind CSS? : Tailwind Tutorial #3</h1><div class="cont font-karla text-lg"><p><span style="font-weight: 400;">In this article, you will know about the advantages of using Tailwind CSS. You can check out one of our tutorials to build your first Tailwind CSS website by clicking </span><a href="https://www.youtube.com/watch?v=p0Q8SQSCoZg" target="_blank" rel="noopener"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. Let’s get started with the tutorial!</span></p>
+<h2><span style="font-size: 14pt;">Advantages of using Tailwind CSS</span></h2>
+<p><strong>1. Eliminate the Need of reinventing class name</strong></p>
+<p><span style="font-weight: 400;">&nbsp;By using Tailwind CSS, One can easily obliterate the requirement of reinventing the class name. In the case of writing Traditional CSS, one has to add a large number of class names while creating a single component. For example: While creating a section, a number of classes such as section-heading, section-para, etc are created.</span></p>
+<p>&nbsp;</p>
+<p><strong>2. No Risk of Breaking the existing template</strong></p>
+<p><span style="font-weight: 400;">While using Tailwind CSS, you can easily style the elements by applying pre-existing utility classes directly in your HTML. The biggest advantage of the Utility first approach is that all your components become independent. Thus, It eliminates the risk of providing the same class to two different components. For example: While creating a Header and Footer, A person can unintentionally provide the same class to both components and thus hampering the development.</span></p>
+<p>&nbsp;</p>
+<p><strong>3. Faster CSS Styling Process</strong></p>
+<p><span style="font-weight: 400;">Tailwind CSS is one of the fastest frameworks for styling HTML. As a result, one can effortlessly create stunning layouts by styling elements directly.&nbsp;</span></p>
+<p><span style="font-weight: 400;">You can try to create a landing page with the help of Traditional CSS and Tailwind CSS to experience the efficient process of using the Tailwind CSS.</span></p>
+<p>&nbsp;</p>
+<p><strong>4. Responsiveness</strong></p>
+<p><span style="font-weight: 400;">In Tailwind CSS, a variety of breakpoints helps in constructing responsive designs. This simply means that you can easily change the CSS at a particular breakpoint. Thus, You can comfortably add the different classes for the different devices in the same element.</span></p>
+<p>&nbsp;</p>
+<h2><span style="font-size: 14pt;">Setting Up Tailwind CSS for Production</span></h2>
+<p><span style="font-weight: 400;">You might know the procedure of setting up Tailwind CSS for development with the help of Play CDN. However, there is a slight difference in the process of setting Tailwind CSS for production. Let’s discuss it out!</span></p>
+<p><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">To set up Tailwind CSS for production, you have to execute the below set of commands:</span></p>
+<div class="code-toolbar"><pre class="language-javascript" tabindex="0"><code class="language-javascript">npm init <span class="token operator">-</span>y</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p><span style="font-weight: 400;">This command will initialize the directory as a NodeJS project.</span></p>
+<div class="code-toolbar"><pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install <span class="token operator">-</span><span class="token constant">D</span> tailwindcss postcss autoprefixer vite</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p><span style="font-weight: 400;">This command will install the required packages.</span></p>
+<div class="code-toolbar"><pre class="language-javascript" tabindex="0"><code class="language-javascript">npx tailwindcss init<span class="token operator">-</span>p</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p><span style="font-weight: 400;">The execution of this command will generate the configure file of Tailwind CSS.</span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-weight: 400;">Create an “Input.css” file</span></li>
+<li><span style="font-weight: 400;">Add below text to your HTML and edit it with the below piece of content:</span></li>
+</ul>
+<p style="padding-left: 40px;"><span style="font-weight: 400;">@tailwind base;</span></p>
+<p style="padding-left: 40px;"><span style="font-weight: 400;">@tailwind components;</span></p>
+<p style="padding-left: 40px;"><span style="font-weight: 400;">@tailwind utilities;&nbsp;</span></p>
+<ul>
+<li><span style="font-weight: 400;">In the tailwind.config.js file, You have to replace “content: []” with “content: [“*”]”.</span></li>
+<li><span style="font-weight: 400;">Moreover, You have to add “start”: “vite” to your scripts in package.json.</span></li>
+<li><span style="font-weight: 400;">Finally, you have to run the npm run start command to start a dev server.</span></li>
+</ul>
+<p><span style="font-weight: 400;">&nbsp;</span></p>
+<p><span style="font-weight: 400;">In the upcoming videos, we will begin understanding Tailwind CSS from start to end. In addition to this, we will be covering a lot of new concepts of Tailwind by creating some astonishing projects.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Check out our Github to access the source code at this point in the course, <a href="https://github.com/CodeWithHarry/Master-Tailwind/tree/master/Tailwind%20Tutorial%203" target="_blank" rel="noopener">Click Here</a></span></p>
+<p>&nbsp;</p>
+<p><strong>Thank you for being with me throughout the tutorial. In the next tutorial we will be learning about Fonts &amp; Sizing. Till then Keep learning and Keep Coding.</strong></p></div></div><div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3"><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Previous </button><button class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"> Next </button></div></div></div>
+    <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2027 www.iEducate.com - All rights reserved
+        </p>
+      </footer>  
+</body>
+</html>

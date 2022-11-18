@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar background h-nav">
+      <ul class="nav-list v-class">
+        <div class="logo"><img src="boy.jpg" alt="logo" /></div>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/course.html">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+      </ul>
+      <div class="rightnav v-class">
+        <input type="text" name="search" id="search" onchange="openPage()" />
+        <button class="s-btn btn-sm" id="btn">Search</button>
+      </div>
+    </nav>
+    <div class="sect">
+      <section class="tai1">
+        <div class="mx-2">
+          <div class="mx-1">
+            <div class="if">
+              <div class="iff">
+                <iframe
+                  title="YouTube Video"
+                  src="https://www.youtube.com/embed/L4_jarMnB0c"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  class="ww"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="panels">
+        <div class="lg:w-2/3 mx-4 lg:mx-8 my-2 min-h-screen">
+          <h1 class="text-2xl my-4 lg:text-3xl flex font-semibold">
+            Introduction to Tailwind CSS &amp; Utility first Workflow: Tailwind
+            Tutorial #1<!-- -->
+          </h1>
+          <div class="cont font-karla text-lg">
+            <p class="MsoNormal">
+              In this course, we are going to learn Tailwind CSS with the help
+              of some astonishing projects. In this first article, we will set
+              up the Tailwind CSS and its workflow. Moreover, we will understand
+              how to add the Tailwind CSS in a production application. So,
+              without further ado, let’s get started-
+            </p>
+            <h2>Introduction - Tailwind CSS</h2>
+            <p class="MsoNormal">
+              Tailwind CSS is a Utility first framework that helps us in styling
+              the HTML pages without leaving the HTML file. This means you can
+              simply add some utility classes in your HTML tags to design your
+              pages swiftly. Tailwind CSS is an extraordinary framework that
+              will completely change the way you write CSS in your programs. One
+              major reason for the popularity of Tailwind CSS is its feasible
+              workflow, as it eliminates the need of mapping the CSS to your
+              HTML file. Nowadays, Tailwind CSS is evolving at a very fast pace.
+              Let’s begin setting up Tailwind CSS-
+            </p>
+            <h2 class="MsoNormal he">Installation</h2>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >First of all, we will install some important programs which
+                will be required throughout our Tailwind Journey-</span
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 36pt;
+                text-indent: -18pt;
+                mso-list: l0 level1 lfo1;
+              "
+            >
+              <!-- [if !supportLists]--><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >●<span
+                  style="
+                    font-variant-numeric: normal;
+                    font-variant-east-asian: normal;
+                    font-stretch: normal;
+                    font-size: 7pt;
+                    line-height: normal;
+                    font-family: 'Times New Roman';
+                  "
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span
+              ><!--[endif]--><strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Install VS code:</span
+                ></strong
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+              >
+                You can easily download the VS code by clicking </span
+              ><a href="https://code.visualstudio.com/download"
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                    color: #1155cc;
+                  "
+                  >here</span
+                ></a
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >. Moreover, Install the live server extension in VS code as it
+                allows us to visualize our static page by opening the page with
+                a live server.</span
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 36pt;
+                text-indent: -18pt;
+                mso-list: l0 level1 lfo1;
+              "
+            >
+              <!-- [if !supportLists]--><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >●<span
+                  style="
+                    font-variant-numeric: normal;
+                    font-variant-east-asian: normal;
+                    font-stretch: normal;
+                    font-size: 7pt;
+                    line-height: normal;
+                    font-family: 'Times New Roman';
+                  "
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span
+              ><!--[endif]--><strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Adding Tailwind CSS:</span
+                ></strong
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+              >
+                To add tailwind CSS to your file, simply visit the official
+                documentation by clicking </span
+              ><a href="https://tailwindcss.com/docs/installation/play-cdn"
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                    color: #1155cc;
+                  "
+                  >here</span
+                ></a
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >. After that, From the play CDN section, just copy the script
+                and add it to the “&lt;head&gt;” of your HTML file. Hence, we
+                can now use Tailwind CSS in our HTML file.</span
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 36pt;
+                text-indent: -18pt;
+                mso-list: l0 level1 lfo1;
+              "
+            >
+              <!-- [if !supportLists]--><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >●<span
+                  style="
+                    font-variant-numeric: normal;
+                    font-variant-east-asian: normal;
+                    font-stretch: normal;
+                    font-size: 7pt;
+                    line-height: normal;
+                    font-family: 'Times New Roman';
+                  "
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span
+              ><!--[endif]--><strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Install Node Js</span
+                ></strong
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >: You can Download Nodejs by clicking </span
+              ><a href="https://nodejs.org/en/download/"
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                    color: #1155cc;
+                  "
+                  >here</span
+                ></a
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >. Select your OS and click on next, and your Nodejs will be
+                installed.</span
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 36pt;
+                text-indent: -18pt;
+                mso-list: l0 level1 lfo1;
+              "
+            >
+              <!-- [if !supportLists]--><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >●<span
+                  style="
+                    font-variant-numeric: normal;
+                    font-variant-east-asian: normal;
+                    font-stretch: normal;
+                    font-size: 7pt;
+                    line-height: normal;
+                    font-family: 'Times New Roman';
+                  "
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span
+              ><!--[endif]--><strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Installing ‘Tailwind CSS IntelliSense’ extension</span
+                ></strong
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >: This extension provides some advanced features such as
+                autocomplete, syntax highlighting, and linting.</span
+              >
+            </p>
+            <h2>Workspace Settings Walkthrough</h2>
+            <p class="MsoNormal">
+              Now, I will provide a short walkthrough of the settings of my VS
+              code as many people ask about some settings throughout the course.
+              Here’s the look of my settings.json file-
+            </p>
+            <p class="MsoNormal">
+              <img
+                class="imgg"
+                src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-1/90229083c8c43ec8a1244cd1d6528b39.webp"
+                alt=""
+              />
+            </p>
+            <p class="MsoNormal">
+              <strong>Figure 1.1: Customising Settings</strong>
+            </p>
+            <h2 class="MsoNormal">Creating Navbar</h2>
+            <p class="MsoNormal">
+              Now, lets begin creating a Navbar to show you the power of
+              Tailwind and make you familiar with the workspace as shown below-
+            </p>
+            <p class="MsoNormal">
+              <img
+                class="imgg"
+                src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/videos/tailwind-course-in-hindi-1/e36b402f62a428106141d222ec576cb1.webp"
+                alt=""
+              />
+            </p>
+            <p class="MsoNormal">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Figure 1.2: Creating Navbar</span
+                ></strong
+              >
+            </p>
+            <p class="MsoNormal">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Explanation:</span
+                ></strong
+              ><span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+              >
+                Here, we have added a navbar having a ‘Home’, ‘About’, and a
+                ‘Contact’ section. Moreover, we have added some classes to
+                enhance the look of the Navbar. In the above case, we have
+                provided the desired padding, text color, and a purple
+                background to the navbar. In addition to this, we have appended
+                the cursor pointer class to our list. Here’s a quick tip,
+                Tailwind provides you with an amazing feature of quick search to
+                get the list of all the ‘classes’ related to a specific
+                property.</span
+              >
+            </p>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >&nbsp;</span
+              >
+            </p>
+            <p class="MsoNormal">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Installing Tailwind CSS - For Production</span
+                ></strong
+              >
+            </p>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >We want to use Tailwind CSS in the production of our
+                application, therefore we would install the Tailwind with the
+                help of Post CSS, Vite, and Autoprefixer. To install Tailwind
+                for production, simply execute the below command in the
+                Terminal-</span
+              >
+            </p>
+            <div class="code-toolbar">
+              <pre
+                class="language-markup"
+                tabindex="0"
+              ><code class="language-markup">npm install -D tailwindcss postcss autoprefixer</code></pre>
+              <div class="toolbar">
+                <div class="toolbar-item">
+                  <button
+                    class="copy-to-clipboard-button"
+                    type="button"
+                    data-copy-state="copy"
+                  >
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="MsoNormal">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Installing Vite</span
+                ></strong
+              >
+            </p>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >After executing the above command, Install Vite with the help
+                of the below command. In package.json, make sure to add a script
+                section to run vite whenever npm start is executed.
+              </span>
+            </p>
+            <div class="code-toolbar">
+              <pre
+                class="language-javascript"
+                tabindex="0"
+              ><code class="language-javascript">npm install vite</code></pre>
+              <div class="toolbar">
+                <div class="toolbar-item">
+                  <button
+                    class="copy-to-clipboard-button"
+                    type="button"
+                    data-copy-state="copy"
+                  >
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="MsoNormal">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Initialising Tailwind</span
+                ></strong
+              >
+            </p>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >Finally, for the initialization of the Tailwind, you have to
+                use the below command-</span
+              >
+            </p>
+            <div class="code-toolbar">
+              <pre
+                class="language-javascript"
+                tabindex="0"
+              ><code class="language-javascript">npx tailwindcss init</code></pre>
+              <div class="toolbar">
+                <div class="toolbar-item">
+                  <button
+                    class="copy-to-clipboard-button"
+                    type="button"
+                    data-copy-state="copy"
+                  >
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >After the execution of the above command, a Tailwind.config.js
+                file will be created. Make sure to add a “*” in the content
+                section as we will be using the Tailwind in the complete
+                content.</span
+              >
+            </p>
+            <p class="MsoNormal">&nbsp;</p>
+            <p class="MsoNormal" style="text-align: left" align="center">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >In the upcoming videos, we will be having a quick revision of
+                the Tailwind CSS. In addition to this, we will be covering a lot
+                of new concepts of Tailwind by creating some astonishing
+                projects.</span
+              ><strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >&nbsp;</span
+                ></strong
+              >
+            </p>
+            <p class="MsoNormal" style="text-align: left" align="center">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+                >Check out our Github to access the source code of the course,
+                &nbsp;<a
+                  href="https://github.com/CodeWithHarry/Master-Tailwind"
+                  target="_blank"
+                  rel="noopener"
+                  >Click Here</a
+                ></span
+              >
+            </p>
+            <p class="MsoNormal">
+              <span
+                style="
+                  font-size: 13pt;
+                  line-height: 115%;
+                  font-family: Roboto;
+                  mso-fareast-font-family: Roboto;
+                  mso-bidi-font-family: Roboto;
+                "
+              >
+              </span>
+            </p>
+            <p class="MsoNormal" style="text-align: left" align="center">
+              <strong
+                ><span
+                  style="
+                    font-size: 13pt;
+                    line-height: 115%;
+                    font-family: Roboto;
+                    mso-fareast-font-family: Roboto;
+                    mso-bidi-font-family: Roboto;
+                  "
+                  >Thank you for being with me throughout the tutorial. See you
+                  all in the next tutorial. Till then Keep learning and Keep
+                  Coding.</span
+                ></strong
+              >
+            </p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div class="flex mx-4 lg:mr-16 py-3 px-3 justify-between lg:w-2/3">
+          <button
+            class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"
+            disabled=""
+          >
+            <a href="tai1.html"> Previous</a></button
+          ><button
+            class="text-white w-20 cursor-pointer justify-center bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-default"
+          >
+            <a href="/tail/tai2.html">Next</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="background">
+      <p class="text-footer">
+        Copyright &copy; 2027 www.iEducate.com - All rights reserved
+      </p>
+    </footer>
+  </body>
+</html>

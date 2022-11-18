@@ -354,8 +354,9 @@ border-radius: 6px;
     width: 681px;
 }
 .ww{
-    width: 1227px;
     height: 690px;
+    max-width: 200%;
+    width: 182%;
 }
 .s{
     font-weight: 500;
@@ -582,14 +583,15 @@ button, input, optgroup, select, textarea {
     margin-top:10px;
 }
 .imgg{
-    width: 1227px;
+    max-width: 200%;
+    width: 96%;
 }
 .www{
     margin-left: 30px;
     margin-top: 23px;
 }
 .min-h-screen {
-    min-height: 86vh;
+    min-height: 100vh;
 }
 .shadow-lg, .shadow-md {
     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
